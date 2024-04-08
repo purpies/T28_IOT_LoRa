@@ -20,8 +20,9 @@ Hence, we have provided 3 copies for 3 seperate lora devices AKA "nodes".
 We have done testing up to 4 working nodes and expected to be able to scale up even further. (Should you require to perform testing with more nodes, increase accordingly and make sure to update the nodeID variable in the codes.
 2. Flash NodeMCU codes into NodeMCU (Used for LoRa nodes to send sensor table data via serial to be published onto our MQTT broker
 3. Startup RPi which is our MQTT broker.
-4. Start up web application, which is already subscribed to broker to retrieve any sensor table.
-5. Connect Sensors, NodeMCU into the LoRa Shield.
-6. Turn LoRa nodes on, 1 at a time, & only proceed to turn a subsequent device when they are successfully turned on & connected. This is to ensure proper setup process.
-7. System is now ready to use.
+4. Start a MQTT Broker on the Raspberry Pi.
+5. Start up web application, which is already subscribed to broker to retrieve any sensor table.
+6. Connect Sensors, NodeMCU into the LoRa Shield.
+7. Turn LoRa nodes on, 1 at a time, & only proceed to turn a subsequent device when they are successfully turned on & connected. This is to ensure proper setup process.
+8. System is now ready to use.
 
