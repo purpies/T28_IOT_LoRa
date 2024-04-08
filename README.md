@@ -12,7 +12,9 @@ Building Fire Monitoring & Evacuation System (Utilizing LoRa Mesh)
 1. MakerUno x LoRa RFM Shield Source Codes
 2. Flask Web Application (Dashboard)
 3. NodeMCU Source Codes
-4. Demo video
+
+### Link to demo:
+https://youtu.be/m5AcK2arDOA
 
 
 ### Pinout Diagram:
