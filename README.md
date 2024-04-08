@@ -1,4 +1,6 @@
 # Internet Of Things Submission Repo (Team 28)
+Building Fire Monitoring & Evacuation System
+
 ## Team Members:
 1. Tan Wen Jie Nicolas 2203432
 2. Clement Choo Jun Kai 2202587
