@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest MQTT Message</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            padding-top: 50px;
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .card-title {
+            font-size: 24px;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .card-text {
+            font-size: 16px;
+            color: #343a40;
+            margin-bottom: 10px;
+        }
+
+        .mb-4 {
+            margin-bottom: 30px;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        h1 {
+            color: #007bff;
+        }
+
+        .row {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">Node Readings</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Node 1</h2>
+                        <p class="card-text">ID: {{ node_id_1 }}</p>
+                        <p class="card-text">Temperature: {{ temperature_1 }}</p>
+                        <p class="card-text">Pax: {{ pax_1 }}</p>
+                        <p class="card-text">Smoke: {{ smoke_1 }}</p>
+                        <p class="card-text">Humidity: {{ humidity_1 }}</p> <!-- Added humidity data -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Node 2</h2>
+                        <p class="card-text">ID: {{ node_id_2 }}</p>
+                        <p class="card-text">Temperature: {{ temperature_2 }}</p>
+                        <p class="card-text">Pax: {{ pax_2 }}</p>
+                        <p class="card-text">Smoke: {{ smoke_2 }}</p>
+                        <p class="card-text">Humidity: {{ humidity_2 }}</p> <!-- Added humidity data -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Node 3</h2>
+                        <p class="card-text">ID: {{ node_id_3 }}</p>
+                        <p class="card-text">Temperature: {{ temperature_3 }}</p>
+                        <p class="card-text">Pax: {{ pax_3 }}</p>
+                        <p class="card-text">Smoke: {{ smoke_3 }}</p>
+                        <p class="card-text">Humidity: {{ humidity_3 }}</p> <!-- Added humidity data -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Node 4</h2>
+                        <p class="card-text">ID: {{ node_id_4 }}</p>
+                        <p class="card-text">Temperature: {{ temperature_4 }}</p>
+                        <p class="card-text">Pax: {{ pax_4 }}</p>
+                        <p class="card-text">Smoke: {{ smoke_4 }}</p>
+                        <p class="card-text">Humidity: {{ humidity_4 }}</p> <!-- Added humidity data -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+<script>
+    // Refresh the page every 5 seconds (5000 milliseconds)
+    setTimeout(function() {
+        location.reload();
+    }, 5000);
+</script>
+
+<script>
+    $(document).ready(function() {
+        // Check for "FIRE" in all sensor values and change text color to red
+        $('.card-text').each(function() {
+            var text = $(this).text();
+            if (text.includes('FIRE')) {
+                $(this).css('color', 'red');
+            }
+        });
+
+        // Refresh the page every 5 seconds (5000 milliseconds)
+        setTimeout(function() {
+            location.reload();
+        }, 5000);
+    });
+</script>
