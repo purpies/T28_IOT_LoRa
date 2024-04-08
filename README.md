@@ -1,5 +1,5 @@
 # Internet Of Things Submission Repo (Team 28)
-Building Fire Monitoring & Evacuation System
+Building Fire Monitoring & Evacuation System (Utilizing LoRa Mesh)
 
 ## Team Members:
 1. Tan Wen Jie Nicolas 2203432
@@ -8,10 +8,15 @@ Building Fire Monitoring & Evacuation System
 4. Veleon Lim Ming Zhe 2201947
 5. Pyrena Chua Yi Zhen 2203502
 
+### Contents of Git Repository
+1. MakerUno x LoRa RFM Shield Source Codes
+2. Flask Web Application (Dashboard)
+3. NodeMCU Source Codes
+4. Demo video
+
 
 ### Pinout Diagram:
 ![Screenshot 2024-04-08 221821](https://github.com/purpies/T28_IOT_LoRa/assets/41365269/7d3da2c4-69b6-41c6-93ad-2860ed98623f)
-
 
 
 ### Setup Instructions:
