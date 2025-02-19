@@ -13,6 +13,9 @@ Building Fire Monitoring & Evacuation System (Utilizing LoRa Mesh)
 2. Flask Web Application (Dashboard)
 3. NodeMCU Source Codes
 
+### Link to presentation slides:
+https://docs.google.com/presentation/d/16thRti3V1epdyBwcboSZpYScN1w9PHg_bXehvgYR254/edit?usp=sharing
+
 ### Link to demo:
 https://youtu.be/m5AcK2arDOA
 
